@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python Practical Docs</title>
+
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center">
+      <h4 class="m-0"><a href="/docs" class="text-light text-decoration-none"><i class="bi bi-code-slash"></i> Python Practical Docs</a></h4>
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        <i class="bi bi-book"></i> Topics
+      </button>
+    </header>
+
+<!-- Sidebar placeholder -->
+<div id="sidebar-placeholder"></div>
+
+
+    <!-- Main Content -->
+<div class="main-content container">
+    <h1>Python Print Master Guide 🐍</h1>
+    <p>This page demonstrates almost every way to use Python's <code>print()</code> function.</p>
+<div class="text-start container ms-5 ps-5">
+    <!-- 1. Basic Printing -->
+    <h2 id="basic-printing">1️⃣ Basic Printing</h2>
+    <pre><code># Single-line print
+print('Hello World!!!')
+
+# Printing basic data types
+print(2)                 # Integer
+print(3.5)               # Float
+print(True)              # Boolean
+</code></pre>
+
+    <pre><code># Multi-line string
+print("""
+This is a multi-line string.
+It can span multiple lines.
+You can use it to write longer text.
+It is useful for documentation or comments.
+""")</code></pre>
+
+    <pre><code># Special characters
+print("He said, \"Hello!\"")
+
+# Escape sequences
+print("First Line\nSecond Line\tTabbed")
+
+# Raw strings
+print(r"C:\Users\Name\Documents")</code></pre>
+
+    <!-- 2. Variables & Formatting -->
+    <h2 id="variables-formatting">2️⃣ Variables & Formatting</h2>
+    <pre><code>name = "Alice"
+age = 30
+
+# f-Strings
+print(f"My name is {name} and I am {age} years old.")
+
+# 'end' parameter
+print("Hello,", end=" ")
+print("World!")
+
+# 'sep' parameter
+print("Apple", "Banana", "Cherry", sep=" | ")</code></pre>
+
+    <!-- 3. Printing Collections -->
+    <h2 id="collections">3️⃣ Printing Collections</h2>
+    <pre><code>person = {"name": "Bob", "age": 25}
+print(person)
+
+fruits = ["Apple", "Banana", "Cherry"]
+print(fruits)
+
+coordinates = (10, 20)
+print(coordinates)
+
+colors = {"Red", "Green", "Blue"}
+print(colors)</code></pre>
+
+    <!-- 4. Numeric Formatting -->
+    <h2 id="numeric-formatting">4️⃣ Numeric Formatting</h2>
+    <pre><code>number = 255
+print(f"Decimal: {number}, Hex: {hex(number)}, Oct: {oct(number)}, Bin: {bin(number)}")
+
+pi = 3.141592653589793
+print(f"Pi to 3 decimal places: {pi:.3f}")
+
+score = 0.9876
+print(f"Success rate: {score:.2%}")</code></pre>
+
+    <!-- 5. Advanced Printing -->
+    <h2 id="advanced-printing">5️⃣ Advanced Printing</h2>
+    <pre><code>import textwrap
+long_string = "This is a very long string that needs to be wrapped..."
+wrapped_string = textwrap.fill(long_string, width=50)
+print(wrapped_string)</code></pre>
+
+    <pre><code>import time
+for i in range(0, 101, 5):
+    print(f"\rProgress: [{'#' * i:<100}] {i}%", end="")
+    time.sleep(0.02)
+print()</code></pre>
+
+    <!-- 6. File & Pretty Printing -->
+    <h2 id="file-pretty-printing">6️⃣ File & Pretty Printing</h2>
+    <pre><code>with open("output.txt", "w") as f:
+    print("This line is written to a file.", file=f)
+
+import pprint
+info = {"name": "Alice", "skills": ["Python", "Django"], "details": {"age": 30}}
+pprint.pprint(info)</code></pre>
+
+    <!-- 7. Colored & Styled Output -->
+    <h2 id="colored-output">7️⃣ Colored & Styled Output</h2>
+    <pre><code># ANSI colors
+print("\033[31mThis is red text\033[0m")
+print("\033[32mThis is green text\033[0m")</code></pre>
+</div>
+  </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+
+  </body>
+</html>

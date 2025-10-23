@@ -13,14 +13,38 @@
   <body>
     <!-- Header -->
     <header class="d-flex justify-content-between align-items-center">
-      <h4 class="m-0"><i class="bi bi-code-slash"></i> Python Practical Docs</h4>
+      <h4 class="m-0"><a href="/docs" class="text-light text-decoration-none"><i class="bi bi-code-slash"></i> Python Practical Docs</a></h4>
       <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
         <i class="bi bi-list"></i> Topics
       </button>
     </header>
 
 <!-- Sidebar placeholder -->
-<div id="sidebar-placeholder"></div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebarLabel"><i class="bi bi-journal-code"></i> Python Topics</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul>
+      <li><a href="pages/print.html"><i class="bi bi-printer"></i> Print Statement</a></li>
+      <li><a href="pages/variables.html"><i class="bi bi-pencil"></i> Variables</a></li>
+      <li><a href="pages/datatypes.html"><i class="bi bi-database"></i> Data Types</a></li>
+      <li><a href="pages/operators.html"><i class="bi bi-calculator"></i> Operators</a></li>
+      <li><a href="pages/conditionals.html"><i class="bi bi-diagram-3"></i> Conditionals (if/else)</a></li>
+      <li><a href="pages/loops.html"><i class="bi bi-arrow-repeat"></i> Loops</a></li>
+      <li><a href="pages/functions.html"><i class="bi bi-cpu"></i> Functions</a></li>
+      <li><a href="pages/lists.html"><i class="bi bi-list-ul"></i> Lists</a></li>
+      <li><a href="pages/tuples.html"><i class="bi bi-collection"></i> Tuples</a></li>
+      <li><a href="pages/dicts.html"><i class="bi bi-diagram-2"></i> Dictionaries</a></li>
+      <li><a href="pages/sets.html"><i class="bi bi-grid"></i> Sets</a></li>
+      <li><a href="pages/oop.html"><i class="bi bi-diagram-2-fill"></i> Object Oriented Programming</a></li>
+      <li><a href="pages/filehandling.html"><i class="bi bi-file-earmark-text"></i> File Handling</a></li>
+      <li><a href="pages/exceptions.html"><i class="bi bi-exclamation-triangle"></i> Exception Handling</a></li>
+    </ul>
+  </div>
+</div>
+
 
 
     <!-- Main Content -->
@@ -34,7 +58,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-
+    
   </body>
 </html>
